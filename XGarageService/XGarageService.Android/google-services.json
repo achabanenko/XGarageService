@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "377403738741",
+    "firebase_url": "https://xgarageservice.firebaseio.com",
+    "project_id": "xgarageservice",
+    "storage_bucket": "xgarageservice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377403738741:android:dbc28d6c3e1bc10aeec63c",
+        "android_client_info": {
+          "package_name": "com.xproduct.xgarageservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377403738741-ppjurdkooe7c4fldoon5kvp30om529fo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUr815FmprOumsCVCfrK-lAo1YqoAlgLg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377403738741-ppjurdkooe7c4fldoon5kvp30om529fo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

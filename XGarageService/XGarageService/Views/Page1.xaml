@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms" 
+             xmlns:syncfusion1="clr-namespace:Syncfusion.XForms.Accordion;assembly=Syncfusion.Expander.XForms" 
+             xmlns:syncfusion2="clr-namespace:Syncfusion.XForms.Expander;assembly=Syncfusion.Expander.XForms" 
+             xmlns:syncfusion3="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="XGarageService.Views.Page1">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <!--<Expander IsExpanded="True">
+                <Expander.Header>
+                    <Label Text="Baboon"
+               FontAttributes="Bold"
+               FontSize="Medium" />
+                </Expander.Header>
+                <StackLayout>
+                  <Label x:Uid="Label1" Text="Car Reg" VerticalOptions="Start" HorizontalOptions="StartAndExpand"  Margin="20,5"/>
+                  <Entry IsPassword="False" AutomationId="idCarReg" Margin="20,5"/>
+                </StackLayout>
+            </Expander>-->
+
+                <!--<syncfusion2:SfExpander x:Name="expander" IsExpanded="True">
+                <syncfusion2:SfExpander.Header>
+                    <StackLayout>
+                        
+                    </StackLayout>
+                </syncfusion2:SfExpander.Header>
+                <syncfusion2:SfExpander.Content>
+                    <StackLayout>
+                    
+                    </StackLayout>
+                </syncfusion2:SfExpander.Content>
+            </syncfusion2:SfExpander>-->
+
+                <Label Text="Car Reg" VerticalOptions="Start" HorizontalOptions="StartAndExpand"  Margin="20,5"/>
+                <Entry IsPassword="False" AutomationId="idCarReg" Margin="20,5"/>
+                <Label Text="Selected Date" VerticalOptions="Start" HorizontalOptions="StartAndExpand"  Margin="20,5"/>
+                <syncfusion:SfCalendar 
+                    x:Name="calendar" 
+                    ViewMode="MonthView" 
+                    EnableDatesInPast="False" 
+                    SelectionMode="SingleSelection" 
+                    SelectionChangedCommand="{Binding OnDateSelectionChanged}"/>
+
+
+
+                <!--<syncfusion2:SfExpander x:Name="expander1" IsExpanded="True">
+                <syncfusion2:SfExpander.Header>
+                    <StackLayout>
+                        
+                    </StackLayout>
+                </syncfusion2:SfExpander.Header>
+                <syncfusion2:SfExpander.Content>
+                    <StackLayout>
+                        
+
+                    </StackLayout>
+                </syncfusion2:SfExpander.Content>
+            </syncfusion2:SfExpander>-->
+
+
+                <StackLayout Margin="20,5">
+                    <Switch OnColor="Orange" ThumbColor="Green" />
+                    <syncfusion3:SfCheckBox Text="Remind me"/>
+                    <syncfusion3:SfCheckBox Text="Collect My Car" IsChecked="True"/>
+                    <syncfusion3:SfCheckBox Text="Bring back My Car" IsChecked="True"/>
+                </StackLayout>
+                <syncfusion3:SfButton Text="Submit" CornerRadius="10" Margin="20,5" Command="{Binding OnSubmitCommand}"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

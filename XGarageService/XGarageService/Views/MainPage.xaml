@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms" 
+             xmlns:syncfusion1="clr-namespace:Syncfusion.XForms.Accordion;assembly=Syncfusion.Expander.XForms" 
+             xmlns:syncfusion2="clr-namespace:Syncfusion.XForms.Expander;assembly=Syncfusion.Expander.XForms" 
+             xmlns:syncfusion3="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="XGarageService.Views.MainPage">
+    <ContentPage.Content >
+        <ScrollView>
+            <StackLayout>
+                <Path Stroke="#fff"  Fill="Black" Aspect="Fill" Data="m2.00064,1.00099l577.99996,0l0,72.24643c-465.77558,-119.58976 61.23365,55.95915 -577.99996,11.88677l0,-84.1332l0,-0.00002l0,0.00002z"/>
+                <Button Text="Maintenance Booking" Margin="20,10" CornerRadius="10" Clicked="ButtonService_Clicked" FontSize="Medium"/>
+                <Button Text="Repair" Margin="20,10" CornerRadius="10" Clicked="ButtonRepaiting_Clicked" FontSize="Medium"/>
+                <Button Text="Recovery" Margin="20,10" CornerRadius="10" Clicked="ButtonRecovery_Clicked" FontSize="Medium"/>
+                
+
+                <!--<StackLayout Orientation="Horizontal" Margin="10,10" HorizontalOptions="Fill">
+                    <Label Text="Car Reg" FontSize="Medium" VerticalOptions="Center"/>
+                    <Button Text="{Binding Path=order.RegNumber,Mode=TwoWay}"  FontSize="Large" TextColor="Blue" FontAttributes="Bold" BackgroundColor="Transparent" HorizontalOptions="Start" Clicked="Button_Clicked_2"/>
+                </StackLayout>
+
+                
+
+
+                <StackLayout Orientation="Horizontal" Margin="10,1">
+                    <Label Text="Date"  FontSize="Medium"  VerticalOptions="Center"/>
+                    <Button Text="{Binding Path=order.SelectedDate,StringFormat='{0:dd MMMM yyyy}',Mode=TwoWay}"  FontSize="Large" TextColor="Blue" FontAttributes="Bold" BackgroundColor="Transparent" HorizontalOptions="Start" Clicked="Button_Clicked_1"/>    
+                </StackLayout>
+                <BoxView HeightRequest="1"  BackgroundColor="Black" Margin="5"/>
+                <StackLayout Orientation="Horizontal" Margin="20,0">
+                    <Switch IsToggled="{Binding Path=order.IsService,Mode=TwoWay}" HorizontalOptions="Start"/>
+                    <Label Text="Service" FontSize="Medium"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="20,0">
+                    <Switch IsToggled="{Binding Path=order.IsRepair,Mode=TwoWay}"  HorizontalOptions="Start"/>
+                    <Label Text="Repair" FontSize="Medium"/>
+                </StackLayout>
+                <BoxView HeightRequest="1"  BackgroundColor="Black" Margin="5"/>
+                <Label Text="Extra Options"  FontSize="Medium"  VerticalOptions="Center" Margin="10,1"/>
+                
+                <StackLayout Orientation="Horizontal" Margin="20,0">
+                    <Switch IsToggled="{Binding Path=order.IsPickupMyCar,Mode=TwoWay}" HorizontalOptions="Start"/>
+                    <Label Text="Pickup My Car" FontSize="Medium"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="20,0">
+                    <Switch IsToggled="{Binding Path=order.IsReturnMyCar,Mode=TwoWay}" HorizontalOptions="Start"/>
+                    <Label Text="Put back My Car" FontSize="Medium"/>
+                </StackLayout>
+                
+                <BoxView HeightRequest="1"  BackgroundColor="Black" Margin="5" />
+
+                <Label Text="Remarks"   FontSize="Default"  VerticalOptions="Center" Margin="10,1"/>
+                <Editor HeightRequest="80" Text="{Binding Path=order.Remarks,Mode=TwoWay}"></Editor>
+                --><!--<BoxView HeightRequest="1"  BackgroundColor="Black" Margin="5" />--><!--
+
+
+                <Button Text="Next" Margin="20,10" CornerRadius="10" Clicked="Button_Clicked" FontSize="Medium"
+                        Command="{Binding OnSubmitCommand}"
+                        />-->
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
